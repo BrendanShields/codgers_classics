@@ -1,0 +1,1 @@
+export const someSecret = '123423123';
