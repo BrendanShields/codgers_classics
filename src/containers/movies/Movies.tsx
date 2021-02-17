@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { MovieCard } from '../../components/Components';
 import { movie } from './Movie.model';
 
@@ -26,6 +27,8 @@ const movie4: movie = {
 }
 
 const arr = [movie1, movie2, movie3, movie4]
+
+axios.get('http://0.0.0.0:8080')
 
     return (
         <div>
