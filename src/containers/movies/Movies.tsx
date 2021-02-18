@@ -27,8 +27,12 @@ const movie4: movie = {
 }
 
 const arr = [movie1, movie2, movie3, movie4]
+async function newFunction() {
+  const response = await axios.get('http://0.0.0.0:8080')
+  console.log(response.data)
+}
 
-axios.get('http://0.0.0.0:8080')
+newFunction()
 
     return (
         <div>
